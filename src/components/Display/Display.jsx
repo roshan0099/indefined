@@ -1,6 +1,6 @@
 import img from '../../assets/img/sk-turning.gif'
 import '../Display/display_style.css'
-function Display(){
+function Display({trigger}){
     const styles = {
         backgroundColor : ""
     }
@@ -16,7 +16,7 @@ function Display(){
                         is crucial yet challenging. We specialize in simplifying this journey for 
                         you. 🚶‍♂️ </div>
                 </div>
-                <div className='h-80 md:flex-1 flex text-white relative overflow-hidden '><div className='add-text-stroke'>&gt;</div></div>
+                <div className='h-80 md:flex-1 flex text-white relative overflow-hidden '><div className={`add-text-stroke ${trigger ? 'opacity-0' : 'opacity-1 transition-all duration-1000'} `}>&gt;</div></div>
 
             </div>
         </div>

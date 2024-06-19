@@ -2,13 +2,13 @@ import { useState } from "react"
 
 
 
-function Navbar(){
+function Navbar({trigger, setTrigger}){
 
     const styles = {
         backgroundColor : "#FBF9F4"
     }
 
-    const [trigger, setTrigger] = useState(false)
+    // const [trigger, setTrigger] = useState(false)
     
     function mobDisplayMenu(){
         setTrigger(!trigger)

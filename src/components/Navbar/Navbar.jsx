@@ -15,7 +15,7 @@ function Navbar(){
     }
     return(
         <>
-        <nav className={`fixed top-0 w-full  ${trigger ? 'h-full duration-300 bg-orange-100' : 'h-20 duration-700'} transition-all ease-in-out`}>
+        <nav className={`fixed top-0 w-full  ${trigger ? 'h-full duration-300 bg-orange-100' : 'h-20 duration-700 bg-white'} transition-all ease-in-out `}>
             <div className="m-3 flex justify-between p-4 md:block">
                 <div className=" md:flex md:flex-row md:justify-around ">
 

@@ -2,13 +2,13 @@ import img from '../../assets/img/sk-turning.gif'
 import '../Display/display_style.css'
 function Display(){
     const styles = {
-        backgroundColor : "#FBF9F4"
+        backgroundColor : ""
     }
 
     return(
         <>
         
-        <div className="h-screen " style={styles}></div>
+        <div className="h-screen"></div>
 	
         </>
     )

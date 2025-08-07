@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>indefined> - Digital Excellence Redefined</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-green': '#0f2027',
+                        'accent-green': '#2c5530',
+                        'light-green': '#4a7c59'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-inter bg-black text-white overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-dark-green/20">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-white">
+                    indefined<span class="text-light-green">></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-white hover:text-light-green transition-colors">Home</a>
+                    <a href="#services" class="nav-link text-white hover:text-light-green transition-colors">Services</a>
+                    <a href="#about" class="nav-link text-white hover:text-light-green transition-colors">About</a>
+                    <a href="#contact" class="nav-link text-white hover:text-light-green transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden text-white burger-menu" id="mobile-menu-btn">
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-black/95 backdrop-blur-md" id="mobile-menu">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#home" class="block text-white hover:text-light-green transition-colors">Home</a>
+                <a href="#services" class="block text-white hover:text-light-green transition-colors">Services</a>
+                <a href="#about" class="block text-white hover:text-light-green transition-colors">About</a>
+                <a href="#contact" class="block text-white hover:text-light-green transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-dark-green/20 to-black"></div>
+        <div class="floating-shapes"></div>
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="animate-fade-in">
+                <h1 class="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+                    Digital Excellence
+                    <br>
+                    Re<span class="text-light-green">defined</span>
+                </h1>
+                <p class="animate-fade-in text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto hero-paragraph">
+                    We craft exceptional digital experiences through innovative web design, strategic marketing, and powerful brand promotion.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                    <button class="btn-primary px-8 py-4 bg-light-green hover:bg-accent-green text-white rounded-full transition-all duration-300 transform hover:scale-105">
+                        Start Your Project
+                    </button>
+                    <button class="btn-secondary px-8 py-4 border-2 border-light-green text-light-green hover:bg-light-green hover:text-black rounded-full transition-all duration-300">
+                        View Our Work
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-light-green text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-b from-black to-dark-green/10">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6">Our <span class="text-light-green">Services</span></h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Comprehensive digital solutions tailored to elevate your brand and drive results
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Website Creation -->
+                <div class="service-card bg-dark-green/20 backdrop-blur-sm border border-light-green/20 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="text-light-green text-4xl mb-6">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Website Creation</h3>
+                    <p class="text-gray-300 mb-6">
+                        Custom, responsive websites that captivate your audience and drive conversions. From concept to launch, we build digital experiences that matter.
+                    </p>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li>• Responsive Design</li>
+                        <li>• Modern Frameworks</li>
+                        <li>• SEO Optimized</li>
+                        <li>• Performance Focused</li>
+                    </ul>
+                </div>
+
+                <!-- Digital Marketing -->
+                <div class="service-card bg-dark-green/20 backdrop-blur-sm border border-light-green/20 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="text-light-green text-4xl mb-6">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Digital Marketing</h3>
+                    <p class="text-gray-300 mb-6">
+                        Strategic digital marketing campaigns that amplify your reach and maximize ROI across all digital channels.
+                    </p>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li>• Social Media Marketing</li>
+                        <li>• PPC Campaigns</li>
+                        <li>• Content Strategy</li>
+                        <li>• Analytics & Insights</li>
+                    </ul>
+                </div>
+
+                <!-- Brand Promotion -->
+                <div class="service-card bg-dark-green/20 backdrop-blur-sm border border-light-green/20 rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300">
+                    <div class="text-light-green text-4xl mb-6">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Brand Promotion</h3>
+                    <p class="text-gray-300 mb-6">
+                        Comprehensive brand promotion strategies that build recognition, trust, and lasting connections with your target audience.
+                    </p>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li>• Brand Identity Design</li>
+                        <li>• Promotional Campaigns</li>
+                        <li>• Influencer Partnerships</li>
+                        <li>• Brand Storytelling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-5xl font-bold mb-8">Why Choose <span class="text-light-green">indefined></span></h2>
+                    <p class="text-xl text-gray-300 mb-8">
+                        We're not just another digital agency. We're your partners in digital transformation, committed to delivering exceptional results that exceed expectations.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="text-light-green text-2xl mt-1">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Innovation First</h3>
+                                <p class="text-gray-400">Cutting-edge solutions using the latest technologies and design trends.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-light-green text-2xl mt-1">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Client-Centric</h3>
+                                <p class="text-gray-400">Your success is our priority. We work closely with you every step of the way.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="text-light-green text-2xl mt-1">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold mb-2">Proven Results</h3>
+                                <p class="text-gray-400">Track record of delivering measurable results and exceeding client expectations.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-light-green/20 to-dark-green/20 rounded-3xl p-8 backdrop-blur-sm border border-light-green/20">
+                        <div class="grid grid-cols-2 gap-8 text-center">
+                            <div>
+                                <div class="text-4xl font-bold text-light-green mb-2">50+</div>
+                                <div class="text-gray-300">Projects Completed</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-light-green mb-2">100%</div>
+                                <div class="text-gray-300">Client Satisfaction</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-light-green mb-2">24/7</div>
+                                <div class="text-gray-300">Support Available</div>
+                            </div>
+                            <div>
+                                <div class="text-4xl font-bold text-light-green mb-2">3+</div>
+                                <div class="text-gray-300">Years Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-t from-dark-green/20 to-black">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-bold mb-6">Let's Create Something <span class="text-light-green">Amazing</span></h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Ready to transform your digital presence? Get in touch and let's discuss your project.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="text-light-green text-2xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Email Us</h3>
+                                <p class="text-gray-400">hello@indefined.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-light-green text-2xl">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Call Us</h3>
+                                <p class="text-gray-400">123456</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="text-light-green text-2xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold">Visit Us</h3>
+                                <p class="text-gray-400">Around the globe</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-green/20 backdrop-blur-sm border border-light-green/20 rounded-2xl p-8">
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 bg-black/50 border border-light-green/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-light-green transition-colors">
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 bg-black/50 border border-light-green/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-light-green transition-colors">
+                        </div>
+                        <input type="text" placeholder="Subject" class="w-full px-4 py-3 bg-black/50 border border-light-green/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-light-green transition-colors">
+                        <textarea rows="5" placeholder="Your Message" class="w-full px-4 py-3 bg-black/50 border border-light-green/30 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-light-green transition-colors resize-none"></textarea>
+                        <button type="submit" class="w-full px-8 py-4 bg-light-green hover:bg-accent-green text-white rounded-lg transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-dark-green/20 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="text-3xl font-bold text-white mb-4">
+                        indefined<span class="text-light-green">></span>
+                    </div>
+                    <p class="text-gray-400 mb-6 max-w-md">
+                        Redefining digital excellence through innovative web design, strategic marketing, and powerful brand promotion.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-light-green transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-light-green transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-light-green transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-light-green transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <!-- <h3 class="text-xl font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-light-green transition-colors">Web Design</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">Digital Marketing</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">Brand Promotion</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">SEO Services</a></li>
+                    </ul> -->
+                </div>
+                <div>
+                    <!-- <h3 class="text-xl font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-light-green transition-colors">About Us</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">Our Team</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-light-green transition-colors">Contact</a></li>
+                    </ul> -->
+                </div>
+            </div>
+            <div class="border-t border-dark-green/20 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 indefined>. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
